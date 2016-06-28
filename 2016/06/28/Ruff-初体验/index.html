@@ -84,15 +84,26 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="学最好的别人 做最好的自己">
-<meta property="og:url" content="http://xyeaphone.com/index.html">
+<meta name="description" content="一、Ruff 是什么？Ruff 是一个 JavaScript 运行时，专为硬件开发而设计。Ruff 对硬件进行了抽象，使用了基于事件驱动、异步 I/O 的模型，使硬件开发变得轻量而且高效。
+
+二、Ruff的诱惑市面上没有一款工具能让我们快速开发出智能硬件应用。 树莓派固然很好，但是我们依然要写 C 写驱动，搞定内存管理、进程调度、异步 I/O 的这些问题。 对于我们这样一个不懂嵌入式开发的人来说">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ruff 初体验">
+<meta property="og:url" content="http://xyeaphone.com/2016/06/28/Ruff-初体验/index.html">
 <meta property="og:site_name" content="学最好的别人 做最好的自己">
-<meta property="og:description">
+<meta property="og:description" content="一、Ruff 是什么？Ruff 是一个 JavaScript 运行时，专为硬件开发而设计。Ruff 对硬件进行了抽象，使用了基于事件驱动、异步 I/O 的模型，使硬件开发变得轻量而且高效。
+
+二、Ruff的诱惑市面上没有一款工具能让我们快速开发出智能硬件应用。 树莓派固然很好，但是我们依然要写 C 写驱动，搞定内存管理、进程调度、异步 I/O 的这些问题。 对于我们这样一个不懂嵌入式开发的人来说">
+<meta property="og:image" content="http://xyeaphone.com/../images/board.svg">
+<meta property="og:image" content="http://xyeaphone.com/../images/deploy.png">
+<meta property="og:image" content="http://xyeaphone.com/../images/jiagou.png">
+<meta property="og:updated_time" content="2016-06-28T16:03:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学最好的别人 做最好的自己">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Ruff 初体验">
+<meta name="twitter:description" content="一、Ruff 是什么？Ruff 是一个 JavaScript 运行时，专为硬件开发而设计。Ruff 对硬件进行了抽象，使用了基于事件驱动、异步 I/O 的模型，使硬件开发变得轻量而且高效。
+
+二、Ruff的诱惑市面上没有一款工具能让我们快速开发出智能硬件应用。 树莓派固然很好，但是我们依然要写 C 写驱动，搞定内存管理、进程调度、异步 I/O 的这些问题。 对于我们这样一个不懂嵌入式开发的人来说">
+<meta name="twitter:image" content="http://xyeaphone.com/../images/board.svg">
 
 
 
@@ -110,7 +121,7 @@
   };
 </script>
 
-  <title> 学最好的别人 做最好的自己 </title>
+  <title> Ruff 初体验 | 学最好的别人 做最好的自己 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +142,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
       <!----------- add Fork me on Github ------------>
@@ -206,9 +215,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -228,10 +237,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/06/28/Ruff-初体验/" itemprop="url">
-                  Ruff 初体验
-                </a>
+                Ruff 初体验
               
             
           </h1>
@@ -278,9 +284,7 @@
       
 
       
-        
-          
-            <hr>
+        <hr>
 <h2 id="一、Ruff-是什么？"><a href="#一、Ruff-是什么？" class="headerlink" title="一、Ruff 是什么？"></a>一、Ruff 是什么？</h2><p>Ruff 是一个 JavaScript 运行时，专为硬件开发而设计。Ruff 对硬件进行了抽象，使用了基于事件驱动、异步 I/O 的模型，使硬件开发变得轻量而且高效。</p>
 <p><img src="../images/board.svg" alt="board"></p>
 <h2 id="二、Ruff的诱惑"><a href="#二、Ruff的诱惑" class="headerlink" title="二、Ruff的诱惑"></a>二、Ruff的诱惑</h2><p>市面上没有一款工具能让我们快速开发出智能硬件应用。 树莓派固然很好，但是我们依然要写 C 写驱动，搞定内存管理、进程调度、异步 I/O 的这些问题。 对于我们这样一个不懂嵌入式开发的人来说，光是一个对 GPIO 口进行高电平变低电平的操作就让我觉得不知其然更不知其所以然。而Ruff就是这样的一个工具，我的同事需要，还有千千万万想玩硬件的互联网工程师需要。熟悉的JavaScript语言，现代的开发方式;模块与驱动，一应俱全;告别交叉编译，简洁地一键部署,这些已经足够诱惑到我去玩它了。<br><img src="../images/deploy.png" alt="deploy"></p>
@@ -359,16 +363,19 @@
 <li>代码已上传至github:<a href="https://github.com/yeaphone/Ruff-server" target="_blank" rel="external">https://github.com/yeaphone/Ruff-server</a></li>
 </ul>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -376,153 +383,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/05/28/kiss/" rel="next" title="Kiss Design & Engineer">
+                <i class="fa fa-chevron-left"></i> Kiss Design & Engineer
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/05/28/kiss/" itemprop="url">
-                  Kiss Design & Engineer
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-28T18:54:32+08:00" content="2016-05-28">
-              2016-05-28
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/28/kiss/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/28/kiss/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <hr>
-<pre><code>设计师和工程师是两类不同的人。再好的想法最后也落地于执行。
-他们要如何合作？
-设计师如何保证自己的想法和设计细节在开发过程中被严格遵循？
-</code></pre><hr>
-<h2 id="一、如何合作"><a href="#一、如何合作" class="headerlink" title="一、如何合作"></a>一、如何合作</h2><p><img src="../images/cor.jpg" alt="合作"></p>
-<ul>
-<li><h5 id="沟通"><a href="#沟通" class="headerlink" title="沟通"></a>沟通</h5><p>  要有一个共同的目标的前提下沟通，如果目标不一致，或没有目标，那就没办法沟通。比如我们有一个宣传活动，这个活动的最终目的就是吸引新用户注册，那我们交流沟通时，完全以这个为目标，与这个偏离太远的直接砍掉，否则加进来。另外要有第三者中立方存在的情况下沟通，比如技术负责人，项目经理等。要不然责任划分不明确，场面容易失控，意思就是讨论是说的在多，最终得有个人拍板。</p>
-</li>
-<li><h4 id="坐在工程师身边"><a href="#坐在工程师身边" class="headerlink" title="坐在工程师身边"></a>坐在工程师身边</h4><p><img src="../images/gulishi.jpeg" alt="鼓励师"></p>
-<p>   坐在工程师身边能让你融入他们的谈话并建立良好的关系。同时能看到代码产出的每一步，尽早发现问题所在。</p>
-</li>
-<li><h4 id="在用户调研阶段邀请工程师参与"><a href="#在用户调研阶段邀请工程师参与" class="headerlink" title="在用户调研阶段邀请工程师参与"></a>在用户调研阶段邀请工程师参与</h4><p>   当他们直观地看到用户如何使用，亲耳听到用户对于产品痛点的抱怨，这比事后用调研报告来说服他们要有用的多。</p>
-</li>
-<li><h4 id="不要抱怨"><a href="#不要抱怨" class="headerlink" title="不要抱怨"></a>不要抱怨</h4><p>  <img src="../images/baoyuan.gif" alt="抱怨"></p>
-<p> 当工作繁忙或遇到问题的时候，千万不能抱怨对方。应该要把问题抛出来，找个地方或者去茶水间进行交流沟通，我们需要快乐的工作。要打开心扉虚心采纳意见，表现出应有的风度，并相信自己的想法是团队取胜的关键。</p>
-</li>
-<li><h4 id="互相信任"><a href="#互相信任" class="headerlink" title="互相信任"></a>互相信任</h4><p> 开发和测试一样，有些设计师会把自己和开发放在对立面，   互相不信任是造成很多问题的根源。首先我们做一个产品要明确目标，不管是设计，还是产品经理，还是开发，共同目标是把产品做好。产品的最终目的是给用户使用的，是一个理性的创作，而非感性的创作。</p>
-</li>
-</ul>
-<blockquote>
-<p>一般程序说做不到的潜台词<br>85%是：<br>—“你个傻X，这什么破方案？和我们风格统一么？不就是你想炫技而已么？”<br>10%是：<br>—“这个动画\交互 太复杂会拖性能，影响我们速度的，不能做上去”<br>剩下5%，才是真的不能做。</p>
-</blockquote>
-<h2 id="二、设计如何被100-严格遵循"><a href="#二、设计如何被100-严格遵循" class="headerlink" title="二、设计如何被100%严格遵循"></a>二、设计如何被100%严格遵循</h2><ul>
-<li><h4 id="得到认同"><a href="#得到认同" class="headerlink" title="得到认同"></a>得到认同</h4><p>  <img src="../images/rentong.jpg" alt="认同"></p>
-<p>  设计师完成设计后，一定要和技术充分讨论，首先是让技术认同你的设计思路，其次是在技术的帮助下对逻辑上的细节缺陷进行修正，再次是要充分表达对技术劳动的尊重，毕竟产生一个想法和实现它在工作量上的差距是巨大的。</p>
-</li>
-<li><h4 id="适当取舍"><a href="#适当取舍" class="headerlink" title="适当取舍"></a>适当取舍</h4>  我们都知道做设计是一件很痛苦的事情，在忍受产品经理的各种想法、各种好点子的同时，还要被技术同学以一句：我不会做，我做不出来这样的话给否定掉。所以有的时候可能需要在“限制中做设计”，在技术能实现的范围内将设计做到最合适，这是一个取舍的过程。</li>
-<li><h4 id="互相学习"><a href="#互相学习" class="headerlink" title="互相学习"></a>互相学习</h4>  有时候设计师多了解程序方面的认识（是认识！不是知识！）还是有需要的。这样便于与工程师沟通，减少误会，对彼此工作性质多点理解。最关键还可以有利反驳那些所谓“技术”的伪工程师们！前端工程师也要学习视觉、交互等方面的知识，这样才能在产品设计中提出自己的想法和见解，也能快速理解设计师的设计用意。还要就是基本掌握Photoshop、Sketch等设计工具，这样在快速开发产品的时候为设计师们分担一些压力。</li>
-<li><h4 id="参照业界主流UI库"><a href="#参照业界主流UI库" class="headerlink" title="参照业界主流UI库"></a>参照业界主流UI库</h4>  设计师设计的时候多了解一些web UI库，主流UI库的出现往往也会衍生出CSS框架，这样工程师和设计师能快速融入到一起，大大减少了设计和开发成本。<br>  <a href="http://v3.bootcss.com/components/" target="_blank" rel="external">bootstrap</a><br>  <a href="http://www.material-ui.com/" target="_blank" rel="external">material-ui</a><br>  <a href="http://amazeui.org/widgets" target="_blank" rel="external">amazeui</a></li>
-<li><h4 id="做一份让工程师泪流满面的标注"><a href="#做一份让工程师泪流满面的标注" class="headerlink" title="做一份让工程师泪流满面的标注"></a>做一份让工程师泪流满面的标注</h4><p>  标注是为了让开发清晰明了的看到所需的信息，从而减少沟通的代价以及尽可能还原视觉效果。</p>
-</li>
-<li><h4 id="规范文件夹"><a href="#规范文件夹" class="headerlink" title="规范文件夹"></a>规范文件夹</h4>  交接文件夹应该包括设计稿、切图、视觉规范，总的文件夹命名规则：模块名称+版本号。</li>
-</ul>
-<h2 id="视频：设计师和工程师的痛"><a href="#视频：设计师和工程师的痛" class="headerlink" title="视频：设计师和工程师的痛"></a><a href="https://www.youtube.com/watch?v=gXg_DpOrLZ0" target="_blank" rel="external">视频：设计师和工程师的痛</a></h2>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -530,6 +416,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/28/Ruff-初体验/"
+           data-title="Ruff 初体验" data-url="http://xyeaphone.com/2016/06/28/Ruff-初体验/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -549,8 +443,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpeg"
@@ -586,6 +489,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、Ruff-是什么？"><span class="nav-number">1.</span> <span class="nav-text">一、Ruff 是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、Ruff的诱惑"><span class="nav-number">2.</span> <span class="nav-text">二、Ruff的诱惑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、我的第一个Ruff程序，点亮网页上的一盏灯"><span class="nav-number">3.</span> <span class="nav-text">三、我的第一个Ruff程序，点亮网页上的一盏灯</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、介绍"><span class="nav-number">3.0.1.</span> <span class="nav-text">1、介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、硬件要求"><span class="nav-number">3.0.2.</span> <span class="nav-text">2、硬件要求</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、软件要求"><span class="nav-number">3.0.3.</span> <span class="nav-text">3、软件要求</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、让我们开始吧"><span class="nav-number">3.0.4.</span> <span class="nav-text">4、让我们开始吧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第一步：下载安装Ruff开发包"><span class="nav-number">3.0.5.</span> <span class="nav-text">第一步：下载安装Ruff开发包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二步：创建项目"><span class="nav-number">3.0.6.</span> <span class="nav-text">第二步：创建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第三步：连接硬件"><span class="nav-number">3.0.7.</span> <span class="nav-text">第三步：连接硬件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第四步：添加外设"><span class="nav-number">3.0.8.</span> <span class="nav-text">第四步：添加外设</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第五步：硬件布局"><span class="nav-number">3.0.9.</span> <span class="nav-text">第五步：硬件布局</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第六步：编写代码"><span class="nav-number">3.0.10.</span> <span class="nav-text">第六步：编写代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第七步：日志与部署"><span class="nav-number">3.0.11.</span> <span class="nav-text">第七步：日志与部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第八步：本地搭建node服务"><span class="nav-number">3.0.12.</span> <span class="nav-text">第八步：本地搭建node服务</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -682,6 +596,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
